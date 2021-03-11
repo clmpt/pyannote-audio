@@ -12,7 +12,9 @@ pytorch_lightning >= 1.0.0
 pytorch_metric_learning >= 0.9.93
 semver >= 2.10.2
 soundfile >= 0.10.2
-torch >= 1.6
+torch >= 1.6; platform_system!="Windows"
+torch >= 1.8.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html; platform_system=="Windows"
 torch-audiomentations >= 0.4
-torchaudio >= 0.7
+torchaudio >= 0.7; platform_system!="Windows"
+torchaudio >= 0.8.0 -f https://download.pytorch.org/whl/torch_stable.html; platform_system=="Windows"
 typing_extensions >= 3.7.4.3
