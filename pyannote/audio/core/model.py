@@ -767,7 +767,7 @@ class Model(pl.LightningModule):
                 model_id = checkpoint.split("@")[0]
                 revision = checkpoint.split("@")[1]
             else:
-                model_id = checkpoint
+                model_id = checkpoint.replace("\\", "/")
                 revision = None
             url = hf_hub_url(
                 model_id, filename=HF_PYTORCH_WEIGHTS_NAME, revision=revision
