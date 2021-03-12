@@ -18,6 +18,8 @@ Until a proper release is available on PyPI, install from the `develop` branch:
 pip install https://github.com/pyannote/pyannote-audio/archive/develop.zip
 ```
 
+Windows users need to install PyTorch by themselves using the [recommended commands](https://pytorch.org/get-started/locally/) (only `torch` and `torchaudio` are required) after the installation `pyannote.audio`.
+
 ## pyannote.audio 101
 
 *For now, this is the closest you can get to an actual documentation.*
